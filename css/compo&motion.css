@@ -1,0 +1,77 @@
+/*  START MAIN HEADING  */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto 80px;
+  color: #777;
+  width: fit-content;
+  transition: var(--main-transition);
+  position: relative;
+}
+.main-heading h2:hover {
+  color: var(--main-color);
+}
+.main-heading h2::before {
+  content: "";
+  background: #857abd;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+.main-heading h2:hover::before {
+  background: var(--main-color);
+}
+.main-heading h2::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 2px solid #857abd;
+}
+.main-heading h2:hover::after {
+  border-color: var(--main-color);
+}
+.main-heading p {
+  color: #777;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  transition: var(--main-transition);
+}
+.main-heading p:hover {
+  color: var(--main-color);
+}
+/* END MAIN HEADING  */
+/* star padding evrery section  */
+.section {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+/* end padding every section  */
+
+/* Start grid-system  */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 40px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+/* Start grid-system  */
